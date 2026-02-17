@@ -94,7 +94,7 @@
   <!-- Action Bar -->
   <div class="fixed top-0 right-0 flex justify-end gap-2 mb-4 no-print p-3 pr-5">
     <button onclick="window.print()"
-      class="flex bg-orange-50 text-xs px-1.5 py-1.5 border border-gray-200 rounded text-gray-500 hover:text-gray-700 hover:border-gray-400 cursor-pointer bg-transparent transition-colors">
+      class="flex bg-orange-50 text-xs px-1.5 py-1.5 border border-gray-200 rounded text-gray-500 hover:text-gray-700 hover:border-gray-400 cursor-pointer transition-colors">
       <span class=""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16"
           fill="currentColor">
           <path
@@ -103,7 +103,7 @@
         </svg></span>
     </button>
     <button onclick="openShareDialog()"
-      class="flex bg-orange-50 text-xs px-1.5 py-1.5 border border-gray-200 rounded text-gray-500 hover:text-gray-700 hover:border-gray-400 cursor-pointer bg-transparent transition-colors">
+      class="flex bg-orange-50 text-xs px-1.5 py-1.5 border border-gray-200 rounded text-gray-500 hover:text-gray-700 hover:border-gray-400 cursor-pointer transition-colors">
       <span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
           <path
             d="M12 2.58582L18.2071 8.79292L16.7929 10.2071L13 6.41424V16H11V6.41424L7.20711 10.2071L5.79289 8.79292L12 2.58582ZM3 18V14H5V18C5 18.5523 5.44772 19 6 19H18C18.5523 19 19 18.5523 19 18V14H21V18C21 19.6569 19.6569 21 18 21H6C4.34315 21 3 19.6569 3 18Z">
@@ -114,13 +114,14 @@
 
   <div class="max-w-[210mm] mx-auto p-8  print:p-0">
     <!-- Header -->
-    <header class="mb-6">
+    <header class="mt-4 mb-6">
       <div class="flex items-start gap-5 md:gap-10">
         <img src="assets/profile/portrait-square.png" alt="David Latz"
-          class="w-[120px] h-[120px] md:w-[200px] md:h-[200px] rounded-full object-cover object-top flex-shrink-0 "
+          class="w-[130px] h-[130px] md:w-[200px] md:h-[200px] rounded-full object-cover object-top flex-shrink-0 "
           style="print-color-adjust: exact; -webkit-print-color-adjust: exact;">
         <div class="mt-2  mix-blend-multiply">
-          <h1 class="instrument-serif-regular text-[34px] print:text-[30px] text-gray-900">David Latz</h1>
+          <h1 class="instrument-serif-regular text-[24px] md:text-[34px] print:text-[30px] text-gray-900">David Latz
+          </h1>
           <p class="text-sm text-gray-700 mb-4">Design & Product Lead</p>
 
           <div class=" mt-2 text-sm text-gray-500 leading-[1.6em]">
@@ -173,7 +174,8 @@
     <!-- Profil / Summary -->
     <section class="mt-12 mb-6 no-break">
       <h2 class="text-xs font-medium uppercase tracking-wider text-gray-500 mb-6">Profil</h2>
-      <p class="text-gray-700 text-[34px] print:text-[30px] leading-[1.3em] instrument-serif-regular ">Ich
+      <p class="text-gray-700 text-[24px] md:text-[34px] print:text-[30px] leading-[1.3em] instrument-serif-regular ">
+        Ich
         gestalte digitale
         Produkte – und
         die Bedingungen, unter denen Teams gut liefern können. Mit Design&shy;ausbildung, Startup-Exit und
@@ -290,7 +292,9 @@
     <section class="no-break mb-5">
       <h2 class="text-xs font-medium uppercase tracking-wider text-gray-500 mb-6">Schwerpunkte</h2>
 
-      <p class="text-gray-700 text-[34px] print:text-[30px] leading-[1.3em] instrument-serif-regular mb-8">An
+      <p
+        class="text-gray-700 text-[24px] md:text-[34px] print:text-[30px] leading-[1.3em] instrument-serif-regular mb-8">
+        An
         der
         Schnittstelle
         von Design, Technologie und Führung – von der Strategie bis zur funktionierenden Lösung.</p>
@@ -425,7 +429,9 @@
 
       <h2 class="text-xs font-medium uppercase tracking-wider text-gray-500 mb-6">Haltung</h2>
 
-      <p class="text-gray-700 text-[34px] print:text-[30px] leading-[1.3em] instrument-serif-regular mb-8">Ich suche die
+      <p
+        class="text-gray-700 text-[24px] md:text-[34px] print:text-[30px] leading-[1.3em] instrument-serif-regular mb-8">
+        Ich suche die
         Zusammenarbeit mit
         Organisationen, die ver&shy;ant&shy;wort&shy;ungs&shy;voll
         wirtschaften und Gestaltung als Hebel verstehen.</p>
@@ -455,9 +461,13 @@
 
     <section class=" no-break mb-5 no-print mix-blend-multiply">
       <div class="flex justify-between">
-        <div class="flex items-center gap-1 "> <a href="https://panoptia.com/" class="no-underline ">✳︎
-            Panoptia Labs</a>
-        </div>
+        <span class="flex items-center gap-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
+            <path
+              d="M12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22ZM9.71002 19.6674C8.74743 17.6259 8.15732 15.3742 8.02731 13H4.06189C4.458 16.1765 6.71639 18.7747 9.71002 19.6674ZM10.0307 13C10.1811 15.4388 10.8778 17.7297 12 19.752C13.1222 17.7297 13.8189 15.4388 13.9693 13H10.0307ZM19.9381 13H15.9727C15.8427 15.3742 15.2526 17.6259 14.29 19.6674C17.2836 18.7747 19.542 16.1765 19.9381 13ZM4.06189 11H8.02731C8.15732 8.62577 8.74743 6.37407 9.71002 4.33256C6.71639 5.22533 4.458 7.8235 4.06189 11ZM10.0307 11H13.9693C13.8189 8.56122 13.1222 6.27025 12 4.24799C10.8778 6.27025 10.1811 8.56122 10.0307 11ZM14.29 4.33256C15.2526 6.37407 15.8427 8.62577 15.9727 11H19.9381C19.542 7.8235 17.2836 5.22533 14.29 4.33256Z">
+            </path>
+          </svg>
+          <a href="https://davidlatz.de" class="no-underline">davidlatz.de</a></span>
         <div class="flex items-center gap-6">
 
 
@@ -468,18 +478,15 @@
               </path>
             </svg>
             <a href="https://open.spotify.com/user/1122079039?si=fd99e9ab032e4240" class="no-underline">Spotify</a>
-            -->
+     
 
-          </span>
+          </span>       -->
 
 
-          <span class="flex items-center gap-1">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
-              <path
-                d="M12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22ZM9.71002 19.6674C8.74743 17.6259 8.15732 15.3742 8.02731 13H4.06189C4.458 16.1765 6.71639 18.7747 9.71002 19.6674ZM10.0307 13C10.1811 15.4388 10.8778 17.7297 12 19.752C13.1222 17.7297 13.8189 15.4388 13.9693 13H10.0307ZM19.9381 13H15.9727C15.8427 15.3742 15.2526 17.6259 14.29 19.6674C17.2836 18.7747 19.542 16.1765 19.9381 13ZM4.06189 11H8.02731C8.15732 8.62577 8.74743 6.37407 9.71002 4.33256C6.71639 5.22533 4.458 7.8235 4.06189 11ZM10.0307 11H13.9693C13.8189 8.56122 13.1222 6.27025 12 4.24799C10.8778 6.27025 10.1811 8.56122 10.0307 11ZM14.29 4.33256C15.2526 6.37407 15.8427 8.62577 15.9727 11H19.9381C19.542 7.8235 17.2836 5.22533 14.29 4.33256Z">
-              </path>
-            </svg>
-            <a href="https://davidlatz.de" class="no-underline">davidlatz.de</a></span>
+
+          <div class="flex items-center gap-1 "> <a href="https://panoptia.com/" class="no-underline ">✳︎
+              Panoptia Labs</a>
+          </div>
 
         </div>
 
